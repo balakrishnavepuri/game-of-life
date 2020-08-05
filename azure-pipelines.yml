@@ -23,6 +23,6 @@ steps:
     goals: 'package'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/gameoflife-web/target'
     ArtifactName: 'drop'
-    publishLocation: 'Container'    
+    publishLocation: 'Container'
